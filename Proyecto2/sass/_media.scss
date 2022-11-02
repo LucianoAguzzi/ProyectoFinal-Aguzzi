@@ -1,0 +1,192 @@
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.adjustbottom {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+
+.fotobio {
+    width: 70%;
+}
+
+.avoidgutter {
+    --bs-gutter-x: 0;
+}
+
+.galeriaindex {
+    grid-area: galeriaindex;
+}
+
+.fotosobremi {
+    grid-area: fotosobremi;
+}
+
+.grid-container {
+    grid-area: grid-container;
+}
+
+.galeria-grid {
+    grid-area: galeria-grid;
+}
+
+img {
+    width: 100%;
+}
+
+
+.img-mi {
+    grid-area: img-mi;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+/*index*/
+.galeriaindex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "foto1 foto2"
+        "foto3 foto4";
+}
+
+@media (max-width:480px) {
+    .galeriaindex {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 5px;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4";
+    }
+}
+
+@media screen and (max-width:768px) {
+    .galeriaindex {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4";
+    }
+}
+
+/*sobremi*/
+.todobio {
+    padding: 5px;
+
+    .img-mi {
+        padding: 10px;
+    }
+
+    .textobio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .alinear {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .todobio {
+        grid-template-columns: 1fr;
+        font-family: 'Gill Sans';
+        font-weight: bold;
+        grid-template-areas:
+            "img-mi"
+            "alinear";
+    }
+}
+
+@media (max-width:768px) {
+    .todobio {
+        color: brown;
+    }
+}
+
+
+/*servicios*/
+.servicios {
+    background-color: white;
+    margin-left: 10px;
+}
+
+
+@media (max-width:480px) {
+    .servicios {
+        background-color: antiquewhite;
+        font-family: 'Courier New';
+    }
+}
+
+@media (max-width:768px) {
+    .servicios {
+        background-color: white;
+        color: cornflowerblue;
+    }
+}
+
+
+/*portfolio*/
+.portfolio {
+    gap: 20px;
+}
+
+@media (max-width:480px) {
+    .portfolio {
+        font-family: 'Gill Sans';
+    }
+}
+
+@media (max-width:768px) {
+    .portfolio {
+        font-weight: bolder;
+    }
+}
+
+/*contacto*/
+@media (max-width:480px) {
+    .contacto {
+        background-color: antiquewhite;
+    }
+}
+
+@media (max-width:768px) {
+    .contacto {
+        font-family: 'Courier New';
+    }
+}

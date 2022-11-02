@@ -1,0 +1,19 @@
+/*operaciones*/
+$red: red;
+$fontweight: bolder;
+$fontsize: 80px;
+
+.sigamosencontacto h1{
+    color:$red;
+    font-weight:$fontweight;
+    font-size: $fontsize;
+}
+/*mixin*/
+@mixin size ($width,$height){
+    height: $height;
+    width: $width;
+}
+.my_mixin{
+    @include size (20px,30px);
+    background-color: antiquewhite;
+}

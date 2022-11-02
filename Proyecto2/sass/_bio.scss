@@ -1,0 +1,19 @@
+.todobio {
+    padding: 5px;
+
+    .img-mi {
+        padding: 10px;
+    }
+
+    .textobio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .alinear {
+            text-align: center;
+        }
+    }
+}

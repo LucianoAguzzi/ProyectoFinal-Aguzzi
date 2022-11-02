@@ -1,0 +1,14 @@
+/*hermanos no anidados y variables locales y globales*/
+.titulo {
+    h1 {
+
+        font-family: $font;
+    }
+
+    $color: black;
+
+    p {
+        color: $color;
+        font-weight: bold;
+    }
+}

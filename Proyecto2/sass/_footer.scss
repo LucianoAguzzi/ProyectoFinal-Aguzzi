@@ -1,0 +1,29 @@
+footer {
+    background-color: #111;
+    color: white;
+    display: flex;
+
+    .contenido-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: auto;
+
+        .sociales {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+
+            .redesimg {
+                width: 100px;
+                margin: 0 0 10px 20px;
+            }
+        }
+    }
+}
